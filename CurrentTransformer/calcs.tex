@@ -1,0 +1,74 @@
+\documentclass[letterpaper,12pt]{article}
+
+\usepackage[english]{babel}
+\usepackage{microtype}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{blindtext}
+\usepackage{graphicx}
+
+\usepackage{array}
+
+\newenvironment{conditions}
+  {\par\vspace{\abovedisplayskip}\noindent\begin{tabular}{>{$}l<{$} @{${}={}$} l}}
+  {\end{tabular}\par\vspace{\belowdisplayskip}}
+
+\graphicspath{ {./ } }
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{\baselineskip}%
+
+\title{Current Transformer Design}
+\author{Thomas Beckley} 
+\date{January 5th, 2020}
+
+\begin{document}
+\maketitle
+
+
+\textbf{Goal:} Design an easily manufacturable current transformer to handle primary currents between 0 and 20 amperes RMS. Material should be cold rolled steel due to accessibility for prototyping. Significant losses are permissible. Transformer should be linear in the provided primary current range.
+
+
+Selected design is of the "doughnut" toride shape, with two hemi-torides with a gap to prevent material flux saturation.
+
+For cold-rolled steel, the following parameters are used [CITE]:
+
+\begin{conditions}
+180 & Relative Permeability ($\mu_{r}$)\\
+2.1 T & Saturation Flux Density ($\beta_{max}$)
+\end{conditions}
+
+The following parameters are arbitrarily selected based on the known diameter of insulated 2 AWG wire, the largest reasonable for these sizes of loads: 
+
+\begin{conditions}
+ 15mm = D_i    	&  Inner Diameter \\
+ 25mm = D_o    	&  Outer Diameter \\   
+ 25mm = Z 		&  Material Thickness \\
+\end{conditions}
+
+
+We can then calculate
+
+\begin{align*} 
+l &= \pi \cdot 0.5 (D_i + D_o) =  62.83 mm \\
+A &= 0.5(D_i - D_o) * Z = 0.00005 m^2 \\
+MMF &= N*I = 20AT \\
+\mathbb{R} & \geq \frac{MMF}{\beta_{max} \cdot A} =  190476.19 AT/Wb
+\mathbb{R}_{gap} = \mathbb{R}_{gap} - \mathbb{R}_{toroid}
+\mathbb{R}_{toroid} = \frac{l}{4 \pi \cdot 10^-7 \cdot \mu_r \cdot A} = 
+\end{align*}
+
+
+
+where: 
+
+\begin{conditions}
+l		& Flux path mean length \\
+A    	& Cross-sectional area \\
+MMF 	& Magneto-motive flux
+N 		& Number of turns (1)
+I 		& Max RMS primary Current(20A)
+\mathbb{R} & Reluctance
+\end{conditions}
+
+\end{document}
