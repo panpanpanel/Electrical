@@ -1,0 +1,13 @@
+# scratch directory
+temp/*
+
+# kicad zip backups
+**/*-backups
+
+# export files for BOM
+*.csv
+*.tsv
+*.xml
+
+# backup files
+ *.bak

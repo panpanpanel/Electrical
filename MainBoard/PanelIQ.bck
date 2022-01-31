@@ -1,0 +1,30 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP A4988
+F https://www.farnell.com/datasheets/2354165.pdf
+$ENDCMP
+#
+$CMP ACHL
+D Crystal Clock Oscillator, Abracon AHCL
+K Crystal Clock Oscillator
+F https://abracon.com/Oscillators/ACHL.pdf
+$ENDCMP
+#
+$CMP DRV8825PWP
+F https://www.ti.com/lit/ds/symlink/drv8825.pdf?HQS=dis-mous-null-mousermode-dsf-pf-null-wwe&ts=1643565767510&ref_url=https%253A%252F%252Fru.mouser.com%252F
+$ENDCMP
+#
+$CMP ESP32-DEVKITC-32U
+F https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
+$ENDCMP
+#
+$CMP MC33167THG
+D 5.0A Inverting Switching Regulators
+$ENDCMP
+#
+$CMP TMC4210-I
+D 1-Axis Stepper Motor Controller
+F https://www.trinamic.com/fileadmin/assets/Products/ICs_Documents/TMC4210_Datasheet_Rev.1.05.pdf
+$ENDCMP
+#
+#End Doc Library
