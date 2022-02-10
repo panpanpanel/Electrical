@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 5
 Title "PanelIQ Main Board - Current"
-Date "2022-01-31"
-Rev "0.1"
+Date "2022-02-10"
+Rev "A"
 Comp "Drawn By: Thomas Beckley"
 Comment1 "Checked By: "
 Comment2 ""

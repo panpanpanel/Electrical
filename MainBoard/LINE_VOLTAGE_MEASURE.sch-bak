@@ -596,7 +596,7 @@ Wire Wire Line
 	8450 5000 8450 4800
 Wire Wire Line
 	8350 4800 8450 4800
-Text Notes 3800 4350 0    100  ~ 0
+Text Notes 3800 4400 0    100  ~ 0
 Ʌ\nA\nV
 Wire Wire Line
 	4000 3850 4800 3850
@@ -604,12 +604,12 @@ Connection ~ 4800 3850
 $Comp
 L power:GND #PWR0106
 U 1 1 620EB466
-P 4000 5350
-F 0 "#PWR0106" H 4000 5100 50  0001 C CNN
-F 1 "GND" H 4005 5177 50  0000 C CNN
-F 2 "" H 4000 5350 50  0001 C CNN
-F 3 "" H 4000 5350 50  0001 C CNN
-	1    4000 5350
+P 4000 5600
+F 0 "#PWR0106" H 4000 5350 50  0001 C CNN
+F 1 "GND" H 4005 5427 50  0000 C CNN
+F 2 "" H 4000 5600 50  0001 C CNN
+F 3 "" H 4000 5600 50  0001 C CNN
+	1    4000 5600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -628,25 +628,25 @@ NoConn ~ 5250 5550
 NoConn ~ 5850 5450
 Wire Wire Line
 	4000 4300 4000 4500
-Text Notes 3900 5400 2    50   ~ 0
-AC neutral is shorted to ground at the box.\nOnly voltage drop could come from the neutral return wire,\nbut the return will be carrying a tiny amount of,\n current & the wire is very short.\n\nThe R68 resistor is to limit current flowing from the circuit neutral through the board and to ground if that's even a thing...\nDoor of case is to be grounded.\n\nDO NOT WIRE LINE VOLTAGE AND\n NEUTRAL BACKWARDS YOU WILL DIE
+Text Notes 3900 5550 2    50   ~ 0
+AC neutral is shorted to ground at the box.\nPossible voltage drop from the neutral return wire,\nbut the return will be carrying a tiny amount of,\n current & the wire is very short.\n\nThe R68 resistor is to limit current flowing\nfrom the circuit neutral through the\nboard and to ground if that's even a thing\nDoor of case is to be grounded.\n\nDO NOT WIRE LINE VOLTAGE AND\n NEUTRAL BACKWARDS YOU WILL DIE
 Wire Wire Line
 	1800 4500 2900 4500
 $Comp
 L Device:R R37
 U 1 1 621CDB32
-P 4000 4950
-F 0 "R37" H 4070 4996 50  0000 L CNN
-F 1 "0" H 4070 4905 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3930 4950 50  0001 C CNN
-F 3 "~" H 4000 4950 50  0001 C CNN
-	1    4000 4950
+P 4000 5150
+F 0 "R37" H 4070 5196 50  0000 L CNN
+F 1 "0" H 4070 5105 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3930 5150 50  0001 C CNN
+F 3 "~" H 4000 5150 50  0001 C CNN
+	1    4000 5150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4000 5350 4000 5100
+	4000 5600 4000 5300
 Wire Wire Line
-	4000 4800 4000 4500
+	4000 5000 4000 4500
 Connection ~ 4000 4500
 $Comp
 L Device:R R36

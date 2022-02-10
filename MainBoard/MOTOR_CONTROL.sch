@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 5
 Title "PanelIQ Main Board - Motor Control"
-Date "2022-01-31"
-Rev "0.1"
+Date "2022-02-10"
+Rev "A"
 Comp "Drawn By: Thomas Beckley"
 Comment1 "Checked By: "
 Comment2 ""
@@ -900,8 +900,8 @@ Text Label 9250 5100 2    50   ~ 0
 SENSE_2
 Text Notes 1900 4900 2    50   ~ 0
 SPI PIN NAMING\n0 - CLK\n1 - MISO\n2 - MOSI\n3 - CS_ADC\n4 - CS_STEP\n5 - CS_SD
-Wire Bus Line
-	2250 3700 2250 4750
 Text Label 6900 4950 0    50   ~ 0
 VREG
+Wire Bus Line
+	2250 3700 2250 4750
 $EndSCHEMATC

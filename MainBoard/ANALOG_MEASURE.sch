@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 5
 Title "PanelIQ Main Board"
-Date "2022-01-31"
-Rev "0.1"
+Date "2022-02-10"
+Rev "A"
 Comp "Drawn By: Thomas Beckley"
 Comment1 "Checked By: "
 Comment2 ""
@@ -128,8 +128,6 @@ Text Label 8250 4300 2    50   ~ 0
 SPI1
 Text Label 8250 4200 2    50   ~ 0
 SPI0
-Text Notes 550  7700 0    200  ~ 40
-NOT FOR MANUFACTURE
 Wire Bus Line
 	4250 4750 3950 4750
 Text HLabel 4250 5000 2    50   Input ~ 0
