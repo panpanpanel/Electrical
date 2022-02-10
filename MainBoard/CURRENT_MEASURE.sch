@@ -1224,10 +1224,6 @@ F 4 "" H 2300 5250 50  0001 C CNN "PN"
 	1    2300 5250
 	-1   0    0    -1  
 $EndComp
-Wire Bus Line
-	6100 2250 6100 2700
-Wire Bus Line
-	8650 2250 8650 2700
 $Comp
 L Connector:Conn_01x04_Female J17
 U 1 1 620C47CE
@@ -1240,4 +1236,8 @@ F 4 "" H 2300 3600 50  0001 C CNN "PN"
 	1    2300 3600
 	-1   0    0    -1  
 $EndComp
+Wire Bus Line
+	6100 2250 6100 2700
+Wire Bus Line
+	8650 2250 8650 2700
 $EndSCHEMATC

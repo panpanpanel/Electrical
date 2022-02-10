@@ -1213,10 +1213,10 @@ F 4 "" H 2300 2350 50  0001 C CNN "PN"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x04_Female J?
+L Connector:Conn_01x04_Female J18
 U 1 1 620B3551
 P 2300 5250
-F 0 "J?" H 2100 5600 50  0000 C CNN
+F 0 "J18" H 2100 5600 50  0000 C CNN
 F 1 "ADDL_INPUT2" H 2050 5500 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 2300 5250 50  0001 C CNN
 F 3 "~" H 2300 5250 50  0001 C CNN
@@ -1224,15 +1224,11 @@ F 4 "" H 2300 5250 50  0001 C CNN "PN"
 	1    2300 5250
 	-1   0    0    -1  
 $EndComp
-Wire Bus Line
-	6100 2250 6100 2700
-Wire Bus Line
-	8650 2250 8650 2700
 $Comp
-L Connector:Conn_01x04_Female J?
+L Connector:Conn_01x04_Female J17
 U 1 1 620C47CE
 P 2300 3600
-F 0 "J?" H 2100 3950 50  0000 C CNN
+F 0 "J17" H 2100 3950 50  0000 C CNN
 F 1 "GND" H 2050 3850 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 2300 3600 50  0001 C CNN
 F 3 "~" H 2300 3600 50  0001 C CNN
@@ -1240,4 +1236,8 @@ F 4 "" H 2300 3600 50  0001 C CNN "PN"
 	1    2300 3600
 	-1   0    0    -1  
 $EndComp
+Wire Bus Line
+	6100 2250 6100 2700
+Wire Bus Line
+	8650 2250 8650 2700
 $EndSCHEMATC

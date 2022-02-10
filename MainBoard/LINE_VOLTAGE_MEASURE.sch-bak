@@ -16,16 +16,14 @@ $EndDescr
 $Comp
 L Device:R R15
 U 1 1 61B730EB
-P 3300 4050
-F 0 "R15" H 3370 4096 50  0000 L CNN
-F 1 "10k" H 3370 4005 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3230 4050 50  0001 C CNN
-F 3 "~" H 3300 4050 50  0001 C CNN
-	1    3300 4050
+P 4000 4150
+F 0 "R15" H 4070 4196 50  0000 L CNN
+F 1 "15k" H 4070 4105 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3930 4150 50  0001 C CNN
+F 3 "~" H 4000 4150 50  0001 C CNN
+	1    4000 4150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3300 4200 3300 4300
 $Comp
 L power:GND #PWR032
 U 1 1 61B730F3
@@ -41,17 +39,17 @@ Wire Wire Line
 	5850 2350 5850 2250
 Wire Wire Line
 	5850 2250 5750 2250
-Text Notes 2400 2650 0    50   ~ 0
-LINE to ground: 100-140Vrms\n
+Text Notes 3100 2750 0    50   ~ 0
+LINE to neutral: 100-140Vrms\n
 Wire Wire Line
-	3300 3900 3300 3800
+	4000 4000 4000 3850
 Wire Wire Line
-	3300 2950 3300 2750
+	4000 3050 4000 2850
 Wire Wire Line
 	5100 3850 4800 3850
-Connection ~ 3300 3800
+Connection ~ 4000 3850
 Wire Wire Line
-	3300 3800 3300 3250
+	4000 3850 4000 3350
 $Comp
 L Device:C C?
 U 1 1 61B73113
@@ -136,14 +134,14 @@ $EndComp
 Wire Wire Line
 	8900 4200 8900 4050
 Wire Notes Line
-	2350 2450 3750 2450
+	3050 2550 4450 2550
 Wire Notes Line
-	3750 2450 3750 3100
+	4450 2550 4450 3200
 Wire Notes Line
-	3750 3100 2350 3100
+	4450 3200 3050 3200
 Wire Notes Line
-	2350 3100 2350 2450
-Text Notes 2400 2550 0    50   ~ 10
+	3050 3200 3050 2550
+Text Notes 3100 2650 0    50   ~ 10
 HIGH VOLTAGE
 Wire Wire Line
 	6000 3750 6150 3750
@@ -180,8 +178,6 @@ Wire Wire Line
 	4800 4900 7750 4900
 Text HLabel 8150 5350 0    50   Input ~ 0
 LINE_PHASE
-Text Notes 550  7650 0    200  ~ 40
-NOT FOR MANUFACTURE
 $Comp
 L Device:D_Schottky D3
 U 1 1 6203C95D
@@ -213,20 +209,18 @@ Wire Wire Line
 	4800 3300 6150 3300
 Wire Wire Line
 	6150 3300 6150 3750
-Text Notes 4450 3800 0    100  ~ 0
-A
 Text Notes 8250 3050 0    100  ~ 0
 C
-Text Notes 650  7050 0    100  ~ 0
+Text Notes 700  7500 0    100  ~ 0
 LINE (Vrms)\n100\n110\n120\n130\n140\n
-Text Notes 1700 7050 0    100  ~ 0
-A (Vrms)\n2.098\n2.308\n2.517\n2.727\n2.937\n
-Text Notes 2600 7050 0    100  ~ 0
-B (VDC)\n2.967\n3.264\n3.560\n3.857\n4.154
+Text Notes 1750 7500 0    100  ~ 0
+A (Vrms)\n2.158\n2.374\n2.590\n2.806\n3.022\n
+Text Notes 2650 7500 0    100  ~ 0
+B (VDC)\n3.052\n3.357\n3.663\n3.968\n4.273\n
 Text Notes 7350 3050 0    100  ~ 0
 B
-Text Notes 3350 7050 0    100  ~ 0
-C (VDC)\n0.367\n1.109\n1.851\n2.592\n3.334\n
+Text Notes 3400 7500 0    100  ~ 0
+C (VDC)\n0.581\n1.344\n2.107\n2.870\n3.633\n
 Wire Wire Line
 	6900 2700 6900 3100
 Wire Wire Line
@@ -254,13 +248,13 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 5500 2350 50 
 	0    -1   -1   0   
 $EndComp
 Wire Notes Line
-	4100 6050 4100 7150
+	4150 6500 4150 7600
 Wire Notes Line
-	4100 7150 600  7150
+	4150 7600 650  7600
 Wire Notes Line
-	600  7150 600  6050
+	650  7600 650  6500
 Wire Notes Line
-	600  6050 4100 6050
+	650  6500 4150 6500
 $Comp
 L power:GND #PWR031
 U 1 1 62943A3A
@@ -295,57 +289,55 @@ Wire Wire Line
 $Comp
 L Connector:Screw_Terminal_01x01 J?
 U 1 1 61FC7A66
-P 2300 4300
+P 1600 4500
 AR Path="/61FC7A66" Ref="J?"  Part="1" 
 AR Path="/627CF802/61AF0728/61FC7A66" Ref="J8"  Part="1" 
-F 0 "J8" H 2450 4300 50  0000 C CNN
-F 1 "NEUTRAL" H 2350 4400 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 2300 4300 50  0001 C CNN
-F 3 "~" H 2300 4300 50  0001 C CNN
-	1    2300 4300
+F 0 "J8" H 1750 4500 50  0000 C CNN
+F 1 "NEUTRAL" H 1650 4600 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 1600 4500 50  0001 C CNN
+F 3 "~" H 1600 4500 50  0001 C CNN
+	1    1600 4500
 	-1   0    0    1   
 $EndComp
 $Comp
 L Connector:Screw_Terminal_01x01 J?
 U 1 1 61FD82FC
-P 2300 3800
+P 3000 3850
 AR Path="/61FD82FC" Ref="J?"  Part="1" 
 AR Path="/627CF802/61AF0728/61FD82FC" Ref="J7"  Part="1" 
-F 0 "J7" H 2450 3800 50  0000 C CNN
-F 1 "CENTER TAP" H 2300 3900 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 2300 3800 50  0001 C CNN
-F 3 "~" H 2300 3800 50  0001 C CNN
-	1    2300 3800
+F 0 "J7" H 3150 3850 50  0000 C CNN
+F 1 "CENTER TAP" H 3000 3950 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 3000 3850 50  0001 C CNN
+F 3 "~" H 3000 3850 50  0001 C CNN
+	1    3000 3850
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	2500 3800 3300 3800
+	3200 3850 4000 3850
 $Comp
 L Connector:Screw_Terminal_01x01 J?
 U 1 1 61FC7A60
-P 2600 2750
+P 3300 2850
 AR Path="/61FC7A60" Ref="J?"  Part="1" 
 AR Path="/627CF802/61AF0728/61FC7A60" Ref="J9"  Part="1" 
-F 0 "J9" H 2750 2750 50  0000 C CNN
-F 1 "LINE" H 2600 2850 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 2600 2750 50  0001 C CNN
-F 3 "~" H 2600 2750 50  0001 C CNN
-	1    2600 2750
+F 0 "J9" H 3450 2850 50  0000 C CNN
+F 1 "LINE" H 3300 2950 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 3300 2850 50  0001 C CNN
+F 3 "~" H 3300 2850 50  0001 C CNN
+	1    3300 2850
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	2800 2750 3300 2750
-Wire Wire Line
-	2500 4300 3300 4300
+	3500 2850 4000 2850
 $Comp
 L Device:R R14
 U 1 1 61B730E5
-P 3300 3100
-F 0 "R14" H 3370 3146 50  0000 L CNN
-F 1 "560k" H 3370 3055 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3230 3100 50  0001 C CNN
-F 3 "~" H 3300 3100 50  0001 C CNN
-	1    3300 3100
+P 4000 3200
+F 0 "R14" H 4070 3246 50  0000 L CNN
+F 1 "680k" H 4070 3155 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3930 3200 50  0001 C CNN
+F 3 "~" H 4000 3200 50  0001 C CNN
+	1    4000 3200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -381,21 +373,8 @@ F 3 "~" H 7850 3100 50  0001 C CNN
 	1    7850 3100
 	0    1    1    0   
 $EndComp
-Text Notes 7300 2750 0    50   ~ 0
+Text Notes 7050 2800 0    50   ~ 0
 2 / 3 RATIO
-$Comp
-L Amplifier_Operational:MCP6004 U?
-U 4 1 625ACFC0
-P 4250 4200
-AR Path="/627CF802/61AF79C2/625ACFC0" Ref="U?"  Part="4" 
-AR Path="/627CF802/61AF0728/625ACFC0" Ref="U4"  Part="4" 
-F 0 "U4" H 4250 3833 50  0000 C CNN
-F 1 "MCP6004" H 4250 3924 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 4200 4300 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 4300 4400 50  0001 C CNN
-	4    4250 4200
-	1    0    0    1   
-$EndComp
 Wire Wire Line
 	6150 4150 6150 4450
 Connection ~ 6150 4450
@@ -525,20 +504,20 @@ Connection ~ 7100 4250
 $Comp
 L Device:R R17
 U 1 1 62BD12BC
-P 6550 4450
-F 0 "R17" V 6343 4450 50  0000 C CNN
-F 1 "1M" V 6434 4450 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 6480 4450 50  0001 C CNN
-F 3 "~" H 6550 4450 50  0001 C CNN
-	1    6550 4450
+P 6450 4450
+F 0 "R17" V 6243 4450 50  0000 C CNN
+F 1 "1M" V 6334 4450 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 6380 4450 50  0001 C CNN
+F 3 "~" H 6450 4450 50  0001 C CNN
+	1    6450 4450
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	6700 4450 6750 4450
+	6600 4450 6750 4450
 Wire Wire Line
 	6750 4250 6750 4450
 Wire Wire Line
-	6150 4450 6400 4450
+	6150 4450 6300 4450
 $Comp
 L Amplifier_Operational:MCP6004 U4
 U 3 1 6213AD52
@@ -550,13 +529,13 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 7850 3850 50 
 	3    7800 3650
 	1    0    0    1   
 $EndComp
-Text Label 3050 3800 2    50   ~ 0
+Text Label 3750 3850 2    50   ~ 0
 HV_CNTR_TAP
-Text Label 3300 2750 2    50   ~ 0
+Text Label 4000 2850 2    50   ~ 0
 HV_IN
 Text Label 6150 3750 0    50   ~ 0
 CUR_PEAK_OUT
-Text Label 3050 4300 2    50   ~ 0
+Text Label 2350 4500 2    50   ~ 0
 HV_NEUTRAL
 Text Label 6800 2700 2    50   ~ 0
 VREF_4_7
@@ -617,102 +596,69 @@ Wire Wire Line
 	8450 5000 8450 4800
 Wire Wire Line
 	8350 4800 8450 4800
-$Comp
-L Device:R R39
-U 1 1 62C88495
-P 4250 3650
-F 0 "R39" V 4043 3650 50  0000 C CNN
-F 1 "27k" V 4134 3650 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 4180 3650 50  0001 C CNN
-F 3 "~" H 4250 3650 50  0001 C CNN
-	1    4250 3650
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R36
-U 1 1 62C8932C
-P 3600 3800
-F 0 "R36" V 3393 3800 50  0000 C CNN
-F 1 "27k" V 3484 3800 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3530 3800 50  0001 C CNN
-F 3 "~" H 3600 3800 50  0001 C CNN
-	1    3600 3800
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R37
-U 1 1 62CA1BCA
-P 3600 4300
-F 0 "R37" V 3393 4300 50  0000 C CNN
-F 1 "27k" V 3484 4300 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3530 4300 50  0001 C CNN
-F 3 "~" H 3600 4300 50  0001 C CNN
-	1    3600 4300
-	0    -1   -1   0   
-$EndComp
+Text Notes 3800 4350 0    100  ~ 0
+Ʌ\nA\nV
 Wire Wire Line
-	3300 4300 3450 4300
-Connection ~ 3300 4300
-Wire Wire Line
-	3750 4300 3850 4300
-$Comp
-L Device:R R?
-U 1 1 62CB32BA
-P 3850 4650
-AR Path="/62CB32BA" Ref="R?"  Part="1" 
-AR Path="/61B594A8/62CB32BA" Ref="R?"  Part="1" 
-AR Path="/627CF802/61AF0728/62CB32BA" Ref="R38"  Part="1" 
-F 0 "R38" H 3780 4604 50  0000 R CNN
-F 1 "27k" H 3780 4695 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3780 4650 50  0001 C CNN
-F 3 "~" H 3850 4650 50  0001 C CNN
-	1    3850 4650
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3850 4500 3850 4300
-Connection ~ 3850 4300
-Wire Wire Line
-	3850 4300 3950 4300
+	4000 3850 4800 3850
+Connection ~ 4800 3850
 $Comp
 L power:GND #PWR0106
-U 1 1 62CB5C35
-P 3850 5000
-AR Path="/627CF802/61AF0728/62CB5C35" Ref="#PWR0106"  Part="1" 
-AR Path="/627CF802/62CB5C35" Ref="#PWR?"  Part="1" 
-AR Path="/627CF802/61AF79C2/62CB5C35" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0106" H 3850 4750 50  0001 C CNN
-F 1 "GND" H 3855 4827 50  0000 C CNN
-F 2 "" H 3850 5000 50  0001 C CNN
-F 3 "" H 3850 5000 50  0001 C CNN
-	1    3850 5000
+U 1 1 620EB466
+P 4000 5350
+F 0 "#PWR0106" H 4000 5100 50  0001 C CNN
+F 1 "GND" H 4005 5177 50  0000 C CNN
+F 2 "" H 4000 5350 50  0001 C CNN
+F 3 "" H 4000 5350 50  0001 C CNN
+	1    4000 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:MCP6004 U4
+U 4 1 62101BE7
+P 5550 5450
+F 0 "U4" H 5550 5817 50  0000 C CNN
+F 1 "MCP6004" H 5550 5726 50  0000 C CNN
+F 2 "" H 5500 5550 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 5600 5650 50  0001 C CNN
+	4    5550 5450
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5250 5350
+NoConn ~ 5250 5550
+NoConn ~ 5850 5450
+Wire Wire Line
+	4000 4300 4000 4500
+Text Notes 3900 5400 2    50   ~ 0
+AC neutral is shorted to ground at the box.\nOnly voltage drop could come from the neutral return wire,\nbut the return will be carrying a tiny amount of,\n current & the wire is very short.\n\nThe R68 resistor is to limit current flowing from the circuit neutral through the board and to ground if that's even a thing...\nDoor of case is to be grounded.\n\nDO NOT WIRE LINE VOLTAGE AND\n NEUTRAL BACKWARDS YOU WILL DIE
+Wire Wire Line
+	1800 4500 2900 4500
+$Comp
+L Device:R R37
+U 1 1 621CDB32
+P 4000 4950
+F 0 "R37" H 4070 4996 50  0000 L CNN
+F 1 "0" H 4070 4905 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3930 4950 50  0001 C CNN
+F 3 "~" H 4000 4950 50  0001 C CNN
+	1    4000 4950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3850 5000 3850 4800
+	4000 5350 4000 5100
 Wire Wire Line
-	4550 4200 4600 4200
+	4000 4800 4000 4500
+Connection ~ 4000 4500
+$Comp
+L Device:R R36
+U 1 1 621D6AFF
+P 3050 4500
+F 0 "R36" V 3250 4450 50  0000 L CNN
+F 1 "68" V 3150 4450 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 2980 4500 50  0001 C CNN
+F 3 "~" H 3050 4500 50  0001 C CNN
+	1    3050 4500
+	0    -1   -1   0   
+$EndComp
 Wire Wire Line
-	3300 3800 3450 3800
-Wire Wire Line
-	3750 3800 3900 3800
-Wire Wire Line
-	3900 3800 3900 4100
-Wire Wire Line
-	3900 4100 3950 4100
-Wire Wire Line
-	3900 3800 3900 3650
-Wire Wire Line
-	3900 3650 4100 3650
-Connection ~ 3900 3800
-Wire Wire Line
-	4400 3650 4600 3650
-Wire Wire Line
-	4600 3650 4600 3850
-Wire Wire Line
-	4600 3850 4800 3850
-Connection ~ 4600 3850
-Wire Wire Line
-	4600 3850 4600 4200
-Connection ~ 4800 3850
+	3200 4500 4000 4500
 $EndSCHEMATC
