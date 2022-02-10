@@ -1,3 +1,5 @@
 (sym_lib_table
   (lib (name PanPanPanel)(type Legacy)(uri ${KIPRJMOD}/PanPanPanel.lib)(options "")(descr ""))
+  (lib (name MainBoard-rescue)(type Legacy)(uri ${KIPRJMOD}/MainBoard-rescue.lib)(options "")(descr ""))
+  (lib (name PanelIQ)(type Legacy)(uri ${KIPRJMOD}/PanelIQ.lib)(options "")(descr ""))
 )

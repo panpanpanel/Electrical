@@ -9,5 +9,8 @@ temp/*
 *.tsv
 *.xml
 
+# PDFs
+*.pdf
+
 # backup files
- *.bak
+*.bak
