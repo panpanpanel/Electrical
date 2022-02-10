@@ -1,0 +1,357 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Barrel_Jack_Switch P1
+U 1 1 61CD718E
+P 3500 1600
+F 0 "P1" H 3532 1925 50  0000 C CNN
+F 1 "CH0" H 3532 1834 50  0000 C CNN
+F 2 "PanelIQ:DC-005" H 3500 1600 50  0001 C CNN
+F 3 "~" H 3500 1600 50  0001 C CNN
+F 4 "103168-1" H 3500 1600 50  0001 C CNN "P/N"
+	1    3500 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 2150 3800 2150
+$Comp
+L power:GND #PWR01
+U 1 1 61E0E681
+P 3150 6600
+F 0 "#PWR01" H 3150 6350 50  0001 C CNN
+F 1 "GND" H 3155 6427 50  0000 C CNN
+F 2 "" H 3150 6600 50  0001 C CNN
+F 3 "" H 3150 6600 50  0001 C CNN
+	1    3150 6600
+	1    0    0    -1  
+$EndComp
+Connection ~ 3150 3150
+Wire Wire Line
+	3900 1850 3900 1700
+Wire Wire Line
+	3900 1700 3800 1700
+Wire Wire Line
+	3150 1850 3900 1850
+Wire Wire Line
+	3800 1600 3900 1600
+Wire Wire Line
+	3900 1600 3900 1700
+Connection ~ 3900 1700
+Wire Wire Line
+	3150 1850 3150 2500
+$Comp
+L Connector:Barrel_Jack_Switch P2
+U 1 1 62388465
+P 3500 2250
+F 0 "P2" H 3532 2575 50  0000 C CNN
+F 1 "CH1" H 3532 2484 50  0000 C CNN
+F 2 "PanelIQ:DC-005" H 3500 2250 50  0001 C CNN
+F 3 "~" H 3500 2250 50  0001 C CNN
+	1    3500 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 1500 4100 1500
+Wire Wire Line
+	3900 2250 3800 2250
+Wire Wire Line
+	3800 2350 3900 2350
+Connection ~ 3900 2350
+Wire Wire Line
+	3900 2350 3900 2250
+$Comp
+L Connector:Barrel_Jack_Switch P3
+U 1 1 6245A0DD
+P 3500 3550
+F 0 "P3" H 3532 3875 50  0000 C CNN
+F 1 "CH2" H 3532 3784 50  0000 C CNN
+F 2 "PanelIQ:DC-005" H 3500 3550 50  0001 C CNN
+F 3 "~" H 3500 3550 50  0001 C CNN
+	1    3500 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 3150 3900 3000
+Wire Wire Line
+	3900 3000 3800 3000
+Wire Wire Line
+	3150 3150 3900 3150
+Wire Wire Line
+	3800 2900 3900 2900
+Wire Wire Line
+	3900 2900 3900 3000
+Connection ~ 3900 3000
+$Comp
+L Connector:Barrel_Jack_Switch P4
+U 1 1 6245A0EB
+P 3500 2900
+F 0 "P4" H 3532 3225 50  0000 C CNN
+F 1 "CH3" H 3532 3134 50  0000 C CNN
+F 2 "PanelIQ:DC-005" H 3500 2900 50  0001 C CNN
+F 3 "~" H 3500 2900 50  0001 C CNN
+	1    3500 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 2800 4100 2800
+Wire Wire Line
+	3900 3550 3800 3550
+Wire Wire Line
+	3800 3650 3900 3650
+Connection ~ 3900 3650
+Wire Wire Line
+	3900 3650 3900 3550
+Wire Wire Line
+	3150 3150 3150 3800
+Wire Wire Line
+	3900 2500 3150 2500
+Wire Wire Line
+	3900 2500 3900 2350
+Connection ~ 3150 2500
+Wire Wire Line
+	3150 2500 3150 3150
+Wire Wire Line
+	3900 3800 3150 3800
+Wire Wire Line
+	3900 3800 3900 3650
+Connection ~ 3150 3800
+Wire Wire Line
+	3800 3450 4100 3450
+Wire Wire Line
+	3150 3800 3150 4500
+$Comp
+L Connector:Barrel_Jack_Switch P5
+U 1 1 624A0D93
+P 3500 4250
+F 0 "P5" H 3532 4575 50  0000 C CNN
+F 1 "CH4" H 3532 4484 50  0000 C CNN
+F 2 "PanelIQ:DC-005" H 3500 4250 50  0001 C CNN
+F 3 "~" H 3500 4250 50  0001 C CNN
+	1    3500 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 4800 3800 4800
+Wire Wire Line
+	3900 4500 3900 4350
+Wire Wire Line
+	3900 4350 3800 4350
+Wire Wire Line
+	3150 4500 3900 4500
+Wire Wire Line
+	3800 4250 3900 4250
+Wire Wire Line
+	3900 4250 3900 4350
+Connection ~ 3900 4350
+Wire Wire Line
+	3800 4150 4100 4150
+Wire Wire Line
+	3900 4900 3800 4900
+Wire Wire Line
+	3800 5000 3900 5000
+Connection ~ 3900 5000
+Wire Wire Line
+	3900 5000 3900 4900
+Wire Wire Line
+	3900 5800 3900 5650
+Wire Wire Line
+	3900 5650 3800 5650
+Wire Wire Line
+	3150 5800 3900 5800
+Wire Wire Line
+	3800 5550 3900 5550
+Wire Wire Line
+	3900 5550 3900 5650
+Connection ~ 3900 5650
+$Comp
+L Connector:Barrel_Jack_Switch P8
+U 1 1 624A0DBA
+P 3500 6200
+F 0 "P8" H 3532 6525 50  0000 C CNN
+F 1 "CH7" H 3532 6434 50  0000 C CNN
+F 2 "PanelIQ:DC-005" H 3500 6200 50  0001 C CNN
+F 3 "~" H 3500 6200 50  0001 C CNN
+	1    3500 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 5450 4100 5450
+Wire Wire Line
+	3900 6200 3800 6200
+Wire Wire Line
+	3800 6300 3900 6300
+Connection ~ 3900 6300
+Wire Wire Line
+	3900 6300 3900 6200
+Wire Wire Line
+	3900 5150 3150 5150
+Wire Wire Line
+	3900 5150 3900 5000
+Wire Wire Line
+	3900 6450 3150 6450
+Wire Wire Line
+	3900 6450 3900 6300
+Wire Wire Line
+	5050 2200 4750 2200
+Wire Wire Line
+	4750 2100 5050 2100
+Text Label 5050 2200 2    50   ~ 0
+CH_A5
+Text Label 5050 2300 2    50   ~ 0
+CH_A6
+Wire Wire Line
+	4750 2300 5050 2300
+Text Label 5050 2400 2    50   ~ 0
+CH_A7
+Wire Wire Line
+	4750 2400 5050 2400
+Text Label 5050 5000 2    50   ~ 0
+CH_B4
+Text Label 5050 5100 2    50   ~ 0
+CH_B5
+Text Label 5050 5200 2    50   ~ 0
+CH_B6
+Text Label 5050 5300 2    50   ~ 0
+CH_B7
+Connection ~ 3150 5150
+Wire Wire Line
+	3150 5150 3150 5800
+Connection ~ 3150 5800
+Wire Wire Line
+	3150 5800 3150 6450
+Connection ~ 3150 6450
+Wire Wire Line
+	3150 6450 3150 6600
+Connection ~ 3150 4500
+Wire Wire Line
+	3150 4500 3150 5150
+Wire Wire Line
+	5050 5100 4750 5100
+Wire Wire Line
+	4750 5000 5050 5000
+Wire Wire Line
+	4750 5200 5050 5200
+Wire Wire Line
+	4750 5300 5050 5300
+$Comp
+L power:GND #PWR02
+U 1 1 62D4E2B5
+P 5000 3800
+F 0 "#PWR02" H 5000 3550 50  0001 C CNN
+F 1 "GND" H 5005 3627 50  0000 C CNN
+F 2 "" H 5000 3800 50  0001 C CNN
+F 3 "" H 5000 3800 50  0001 C CNN
+	1    5000 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 3550 5000 3550
+Wire Wire Line
+	5000 3550 5000 3650
+Wire Wire Line
+	4750 3650 5000 3650
+Connection ~ 5000 3650
+Wire Wire Line
+	5000 3650 5000 3800
+Wire Wire Line
+	4750 3350 5000 3350
+Wire Wire Line
+	5000 3350 5000 3450
+Connection ~ 5000 3550
+Wire Wire Line
+	4750 3450 5000 3450
+Connection ~ 5000 3450
+Wire Wire Line
+	5000 3450 5000 3550
+Wire Wire Line
+	3800 6100 4100 6100
+$Comp
+L Connector:Conn_01x04_Female J1
+U 1 1 62CDDC79
+P 4550 2200
+F 0 "J1" H 4350 2550 50  0000 C CNN
+F 1 "ADDL_INPUT1" H 4300 2450 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4550 2200 50  0001 C CNN
+F 3 "~" H 4550 2200 50  0001 C CNN
+F 4 "" H 4550 2200 50  0001 C CNN "PN"
+	1    4550 2200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Female J3
+U 1 1 620B3551
+P 4550 5100
+F 0 "J3" H 4350 5450 50  0000 C CNN
+F 1 "ADDL_INPUT2" H 4300 5350 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4550 5100 50  0001 C CNN
+F 3 "~" H 4550 5100 50  0001 C CNN
+F 4 "" H 4550 5100 50  0001 C CNN "PN"
+	1    4550 5100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Female J2
+U 1 1 620C47CE
+P 4550 3450
+F 0 "J2" H 4350 3800 50  0000 C CNN
+F 1 "GND" H 4300 3700 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4550 3450 50  0001 C CNN
+F 3 "~" H 4550 3450 50  0001 C CNN
+F 4 "" H 4550 3450 50  0001 C CNN "PN"
+	1    4550 3450
+	-1   0    0    -1  
+$EndComp
+Text Label 5050 2100 2    50   ~ 0
+CH_A4
+Text Label 4100 6100 2    50   ~ 0
+CH_B4
+Text Label 4100 5450 2    50   ~ 0
+CH_B5
+Text Label 4100 4800 2    50   ~ 0
+CH_B6
+Text Label 4100 4150 2    50   ~ 0
+CH_B7
+Text Label 4100 1500 2    50   ~ 0
+CH_A7
+Text Label 4100 2150 2    50   ~ 0
+CH_A6
+Text Label 4100 2800 2    50   ~ 0
+CH_A5
+Text Label 4100 3450 2    50   ~ 0
+CH_A4
+$Comp
+L Connector:Barrel_Jack_Switch P6
+U 1 1 624A0DA1
+P 3500 5550
+F 0 "P6" H 3532 5875 50  0000 C CNN
+F 1 "CH5" H 3532 5784 50  0000 C CNN
+F 2 "PanelIQ:DC-005" H 3500 5550 50  0001 C CNN
+F 3 "~" H 3500 5550 50  0001 C CNN
+	1    3500 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Barrel_Jack_Switch P7
+U 1 1 624A0DAD
+P 3500 4900
+F 0 "P7" H 3532 5225 50  0000 C CNN
+F 1 "CH6" H 3532 5134 50  0000 C CNN
+F 2 "PanelIQ:DC-005" H 3500 4900 50  0001 C CNN
+F 3 "~" H 3500 4900 50  0001 C CNN
+	1    3500 4900
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
