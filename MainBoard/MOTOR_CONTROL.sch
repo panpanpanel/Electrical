@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 5
 Title "PanelIQ Main Board - Motor Control"
-Date "2022-02-10"
+Date "2022-02-11"
 Rev "A"
 Comp "Drawn By: Thomas Beckley"
 Comment1 "Checked By: "
@@ -75,7 +75,7 @@ L Connector:Conn_01x04_Female J15
 U 1 1 61E0A241
 P 10900 4150
 F 0 "J15" H 10792 3725 50  0000 C CNN
-F 1 "STEPPER_OUT" H 10792 3816 50  0000 C CNN
+F 1 "STEPPER" H 10792 3816 50  0000 C CNN
 F 2 "Connector_JST:JST_XH_B4B-XH-AM_1x04_P2.50mm_Vertical" H 10900 4150 50  0001 C CNN
 F 3 "~" H 10900 4150 50  0001 C CNN
 	1    10900 4150

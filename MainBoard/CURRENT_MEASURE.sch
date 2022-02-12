@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 5
 Title "PanelIQ Main Board - Current"
-Date "2022-02-10"
+Date "2022-02-11"
 Rev "A"
 Comp "Drawn By: Thomas Beckley"
 Comment1 "Checked By: "
@@ -235,8 +235,6 @@ Entry Wire Line
 	8650 2500 8750 2600
 Text Label 8800 2700 0    50   ~ 0
 MUX_SELECT1
-Text Label 8800 2800 0    50   ~ 0
-MUX_SELECT0
 Wire Wire Line
 	8750 2600 9450 2600
 Text HLabel 8650 2250 1    50   Input ~ 0
@@ -1078,10 +1076,6 @@ Wire Wire Line
 	6750 1900 7050 1900
 Text Label 9150 2000 0    50   ~ 0
 CH_B3
-Text Label 8800 2600 0    50   ~ 0
-MUX_SELECT2
-Text Notes 9350 3050 2    50   ~ 0
-**NOTE SWAPPED 0/2\nMUX SELECT PINS\nFOR LAYOUT PURPOSES
 $Comp
 L Connector_Generic:Conn_02x02_Odd_Even J?
 U 1 1 6280D30B
@@ -1236,8 +1230,14 @@ F 4 "" H 2300 3600 50  0001 C CNN "PN"
 	1    2300 3600
 	-1   0    0    -1  
 $EndComp
-Wire Bus Line
-	6100 2250 6100 2700
+Text Label 8800 2600 0    50   ~ 0
+MUX_SELECT2
 Wire Bus Line
 	8650 2250 8650 2700
+Wire Bus Line
+	6100 2250 6100 2700
+Text Label 8800 2800 0    50   ~ 0
+MUX_SELECT0
+Text Notes 9350 3050 2    50   ~ 0
+**NOTE SWAPPED 0/2\nMUX SELECT PINS\nFOR LAYOUT PURPOSES
 $EndSCHEMATC

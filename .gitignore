@@ -14,3 +14,5 @@ temp/*
 
 # backup files
 *.bak
+
+*/Output/*

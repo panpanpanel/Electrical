@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 5
 Title "PanelIQ Main Board"
-Date "2022-02-10"
+Date "2022-02-11"
 Rev "A"
 Comp "Drawn By: Thomas Beckley"
 Comment1 "Checked By: "
@@ -73,7 +73,7 @@ Text Label 10450 3800 1    50   ~ 0
 SPI[0..5]
 Text Label 5350 1850 2    50   ~ 0
 SPI[0..5]
-Text Label 6500 2350 0    50   ~ 0
+Text Label 6500 2550 0    50   ~ 0
 MUX_SELECT[0..3]
 Wire Wire Line
 	9550 2450 10350 2450
@@ -126,17 +126,6 @@ F 2 "Connector_Pin:Pin_D1.4mm_L8.5mm_W2.8mm_FlatFork" H 1900 6350 50  0001 C CNN
 F 3 "~" H 1900 6350 50  0001 C CNN
 	1    1900 6350
 	-1   0    0    1   
-$EndComp
-$Comp
-L MainBoard-rescue:ESP32-DEVKITC-32U-PanelIQ U2
-U 1 1 626E8F65
-P 8850 2650
-F 0 "U2" H 8850 3817 50  0000 C CNN
-F 1 "ESP32-DEVKITC-32U" H 8850 3726 50  0000 C CNN
-F 2 "PanelIQ:MODULE_ESP32-DEVKITC-32U" H 8400 3700 50  0001 L BNN
-F 3 "https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf" H 8850 2650 50  0001 L BNN
-	1    8850 2650
-	1    0    0    -1  
 $EndComp
 $Comp
 L power:+6V #PWR018
@@ -203,31 +192,31 @@ Wire Wire Line
 NoConn ~ 8300 4900
 NoConn ~ 8300 5600
 Wire Wire Line
-	7300 2450 8150 2450
+	7300 2650 8150 2650
 Text Label 10350 2850 2    50   ~ 0
 SPI0
 Wire Wire Line
-	7300 2150 8150 2150
+	7300 2350 8150 2350
 Entry Wire Line
-	7300 2150 7200 2050
-Text Label 7600 2350 0    50   ~ 0
+	7300 2350 7200 2250
+Text Label 7600 2550 0    50   ~ 0
 MUX_SELECT0
-Text Label 7600 2450 0    50   ~ 0
+Text Label 7600 2650 0    50   ~ 0
 MUX_SELECT1
-Text Label 7600 2250 0    50   ~ 0
+Text Label 7600 2450 0    50   ~ 0
 MUX_SELECT3
-Text Label 7600 2150 0    50   ~ 0
+Text Label 7600 2350 0    50   ~ 0
 MUX_SELECT2
 Wire Wire Line
-	8150 2350 7300 2350
+	8150 2550 7300 2550
 Wire Wire Line
-	8150 2250 7300 2250
+	8150 2450 7300 2450
+Entry Wire Line
+	7300 2650 7200 2550
 Entry Wire Line
 	7300 2450 7200 2350
 Entry Wire Line
-	7300 2250 7200 2150
-Entry Wire Line
-	7300 2350 7200 2250
+	7300 2550 7200 2450
 Entry Wire Line
 	7650 5300 7550 5200
 Entry Wire Line
@@ -695,7 +684,7 @@ L Connector:Conn_01x02_Male J3
 U 1 1 62BA6C45
 P 2700 3650
 F 0 "J3" H 2600 3650 50  0000 C CNN
-F 1 "DOOR_JMPR" H 2750 3500 50  0000 C CNN
+F 1 "DOOR" H 2750 3500 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2700 3650 50  0001 C CNN
 F 3 "~" H 2700 3650 50  0001 C CNN
 	1    2700 3650
@@ -875,7 +864,7 @@ CLR_CURRENT
 Wire Wire Line
 	4950 2150 5650 2150
 Wire Bus Line
-	6500 2350 7200 2350
+	6500 2550 7200 2550
 Text Label 5850 1450 2    50   ~ 0
 MUX_SELECT[0..3]
 Wire Bus Line
@@ -911,15 +900,15 @@ SPI5
 Wire Wire Line
 	9550 1950 10350 1950
 Wire Wire Line
-	7500 2650 8150 2650
-Text Label 7500 2650 0    50   ~ 0
+	7500 2750 8150 2750
+Text Label 7500 2750 0    50   ~ 0
 CLR_CURRENT
-Text Label 7500 2550 0    50   ~ 0
+Text Label 7600 2250 0    50   ~ 0
 CUR_PHASE
 Text Label 7650 3150 0    50   ~ 0
 LINE_PHASE
 Wire Wire Line
-	8150 2550 7500 2550
+	8150 2250 7600 2250
 Text Label 7850 2950 0    50   ~ 0
 BUZZ
 NoConn ~ 9550 2050
@@ -942,10 +931,22 @@ Wire Wire Line
 	8150 5400 8150 6050
 Wire Wire Line
 	7850 2950 8150 2950
-NoConn ~ 8150 2750
 NoConn ~ 9550 2750
+NoConn ~ 8150 2150
+$Comp
+L MainBoard-rescue:ESP32-DEVKITC-32U-PanelIQ-MainBoard-rescue U2
+U 1 1 626E8F65
+P 8850 2650
+F 0 "U2" H 8850 3817 50  0000 C CNN
+F 1 "ESP32-DEVKITC-32U" H 8850 3726 50  0000 C CNN
+F 2 "PanelIQ:MODULE_ESP32-DEVKITC-32U" H 8400 3700 50  0001 L BNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf" H 8850 2650 50  0001 L BNN
+	1    8850 2650
+	1    0    0    -1  
+$EndComp
+NoConn ~ 9550 3250
 Wire Bus Line
-	7200 2050 7200 2350
+	7200 2250 7200 2550
 Wire Bus Line
 	7550 4750 7550 5400
 Wire Bus Line

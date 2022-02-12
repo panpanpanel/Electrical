@@ -475,11 +475,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# MainBoard-rescue_ESP32-DEVKITC-32U-PanelIQ
+# MainBoard-rescue_ESP32-DEVKITC-32U-PanelIQ-MainBoard-rescue
 #
-DEF MainBoard-rescue_ESP32-DEVKITC-32U-PanelIQ U 0 40 Y Y 1 F N
+DEF MainBoard-rescue_ESP32-DEVKITC-32U-PanelIQ-MainBoard-rescue U 0 40 Y Y 1 F N
 F0 "U" -1 1026 50 H V L BNN
-F1 "MainBoard-rescue_ESP32-DEVKITC-32U-PanelIQ" -451 -1101 50 H V L BNN
+F1 "MainBoard-rescue_ESP32-DEVKITC-32U-PanelIQ-MainBoard-rescue" -451 -1101 50 H V L BNN
 F2 "MODULE_ESP32-DEVKITC-32U" -450 1050 50 H I L BNN
 F3 "" 0 0 50 H I L BNN
 DRAW
